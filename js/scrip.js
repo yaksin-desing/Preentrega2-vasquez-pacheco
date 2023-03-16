@@ -15,7 +15,7 @@ var cursor = document.querySelector('.cursor'),
     mouseX = 0,
     mouseY = 0
 
-gsap.to({}, 0.016, {
+gsap.to({}, 0.050, {
     repeat: -1,
 
     onRepeat: function () {
@@ -45,4 +45,23 @@ cursorScale.forEach(link => {
             cursor.classList.add('grow-small');
         }
     });
+});
+
+let imgp = document.getElementById('imgp');
+let menu = document.getElementById('menu');
+
+window.addEventListener('scroll',()=>{
+    let value = window.scrollY;
+    imgp.style.marginBottom = value * 0.4 + 'px';
+    if (imgp.style.marginBottom <'1px'){
+        menu.style.position = 'fixed';
+        menu.style.zIndex='100';
+        menu.style.paddingTop='1em';
+        menu.style.top='0px';
+    };
+    if (imgp.style.marginBottom =='0px'){
+        menu.style.paddingTop='0em';
+        menu.style.position = 'relative';
+    };
+
 });
