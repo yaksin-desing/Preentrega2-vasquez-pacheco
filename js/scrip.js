@@ -49,11 +49,13 @@ cursorScale.forEach(link => {
 
 let imgp = document.getElementById('imgp');
 let menu = document.getElementById('menu');
+let item1 = document.getElementById('item1');
 
 window.addEventListener('scroll',()=>{
     let value = window.scrollY;
     imgp.style.marginBottom = value * 0.4 + 'px';
     if (imgp.style.marginBottom <'1px'){
+        console.log('menu entro');
         menu.style.position = 'fixed';
         menu.style.zIndex='100';
         menu.style.paddingTop='1em';
@@ -63,5 +65,28 @@ window.addEventListener('scroll',()=>{
         menu.style.paddingTop='0em';
         menu.style.position = 'relative';
     };
-
 });
+
+
+function girar(giro,color,colorline){
+    document.getElementById('flecha').style.transform = giro;
+    document.getElementById('flecha').style.background = color;
+    document.getElementById('flechaline').style.filter = colorline;
+}
+function girar1(giro,color,colorline){
+    document.getElementById('flecha1').style.transform = giro;
+    document.getElementById('flecha1').style.background = color;
+    document.getElementById('flechaline1').style.filter = colorline;
+}
+function girar2(giro,color,colorline){
+    document.getElementById('flecha2').style.transform = giro;
+    document.getElementById('flecha2').style.background = color;
+    document.getElementById('flechaline2').style.filter = colorline;
+}
+function girar3(giro,color,colorline){
+    document.getElementById('flecha3').style.transform = giro;
+    document.getElementById('flecha3').style.background = color;
+    document.getElementById('flechaline3').style.filter = colorline;
+}
+
+
