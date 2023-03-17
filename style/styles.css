@@ -466,6 +466,13 @@ h1 {
     transform-origin: bottom left;
 }
 
+.cuerpotitulo::after {
+    position: absolute;
+	transition: .7s ease-in-out all;
+    transform: scale(0.9) translateX(-200px);
+    background: #009cb8;
+}
+
 
 .pie {
     display: flex;
@@ -714,11 +721,13 @@ footer {
         transition-timing-function: cubic-bezier(0.01, 1.36, 1, 1.74);
         transform: rotate(35deg);
         background: #000000;
+        
     }
 
     #item1.visible {
 
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+        border: 0.5px solid #000000;
     }
 
     #item1.visible #flechaline {
@@ -737,6 +746,7 @@ footer {
     #item2.visible {
 
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+        border: 0.5px solid #000000;
     }
 
     #item2.visible #flechaline1 {
@@ -755,6 +765,7 @@ footer {
     #item3.visible {
 
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+        border: 0.5px solid #000000;
     }
 
     #item3.visible #flechaline2 {
@@ -772,6 +783,7 @@ footer {
     #item4.visible {
 
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+        border: 0.5px solid #000000;
     }
 
     #item4.visible #flechaline3 {

@@ -101,6 +101,8 @@ function girar3(giro,color,colorline,trans,transTiming){
 
 let titulo = document.getElementById('titulo');
 let titulo1 = document.getElementById('titulo1'); 
+let cuerpotitulo = document.getElementById('cuerpotitulo');
+
 const cargarImagen = (entradas, observador) => {
 
 	entradas.forEach((entrada) => {
@@ -126,5 +128,6 @@ observador.observe(item1);
 observador.observe(item2);
 observador.observe(item3);
 observador.observe(item4);
+observador.observe(cuerpotitulo);
 
 
