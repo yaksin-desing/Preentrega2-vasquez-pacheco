@@ -50,12 +50,14 @@ cursorScale.forEach(link => {
 let imgp = document.getElementById('imgp');
 let menu = document.getElementById('menu');
 let item1 = document.getElementById('item1');
+let item2 = document.getElementById('item2');
+let item3 = document.getElementById('item3');
+let item4 = document.getElementById('item4');
 
 window.addEventListener('scroll',()=>{
     let value = window.scrollY;
     imgp.style.marginBottom = value * 0.4 + 'px';
     if (imgp.style.marginBottom <'1px'){
-        console.log('menu entro');
         menu.style.position = 'fixed';
         menu.style.zIndex='100';
         menu.style.paddingTop='1em';
@@ -68,25 +70,61 @@ window.addEventListener('scroll',()=>{
 });
 
 
-function girar(giro,color,colorline){
+function girar(giro,color,colorline,trans,transTiming){
     document.getElementById('flecha').style.transform = giro;
+    document.getElementById('flecha').style.transition = trans;
+    document.getElementById('flecha').style.transitionTimingFunction = transTiming;
     document.getElementById('flecha').style.background = color;
     document.getElementById('flechaline').style.filter = colorline;
 }
-function girar1(giro,color,colorline){
+function girar1(giro,color,colorline,trans,transTiming){
     document.getElementById('flecha1').style.transform = giro;
+    document.getElementById('flecha1').style.transition = trans;
+    document.getElementById('flecha1').style.transitionTimingFunction = transTiming;
     document.getElementById('flecha1').style.background = color;
     document.getElementById('flechaline1').style.filter = colorline;
 }
-function girar2(giro,color,colorline){
+function girar2(giro,color,colorline,trans,transTiming){
     document.getElementById('flecha2').style.transform = giro;
+    document.getElementById('flecha2').style.transition = trans;
+    document.getElementById('flecha2').style.transitionTimingFunction = transTiming;
     document.getElementById('flecha2').style.background = color;
     document.getElementById('flechaline2').style.filter = colorline;
 }
-function girar3(giro,color,colorline){
+function girar3(giro,color,colorline,trans,transTiming){
     document.getElementById('flecha3').style.transform = giro;
+    document.getElementById('flecha3').style.transition = trans;
+    document.getElementById('flecha3').style.transitionTimingFunction = transTiming;
     document.getElementById('flecha3').style.background = color;
     document.getElementById('flechaline3').style.filter = colorline;
 }
+
+let titulo = document.getElementById('titulo');
+let titulo1 = document.getElementById('titulo1'); 
+const cargarImagen = (entradas, observador) => {
+
+	entradas.forEach((entrada) => {
+		if(entrada.isIntersecting){
+            console.log('visible');
+			entrada.target.classList.add('visible');
+		}else {
+            console.log('no visible');
+            entrada.target.classList.remove('visible');
+		}
+	});
+}
+
+const observador = new IntersectionObserver(cargarImagen, {
+	root: null,
+	rootMargin: '0px',
+	threshold: 1.0
+});
+
+observador.observe(titulo);
+observador.observe(titulo1);
+observador.observe(item1);
+observador.observe(item2);
+observador.observe(item3);
+observador.observe(item4);
 
 
