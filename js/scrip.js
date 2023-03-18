@@ -61,12 +61,14 @@ window.addEventListener('scroll',()=>{
     if (imgp.style.marginBottom <'1px'){
         menu.style.position = 'fixed';
         menu.style.zIndex='100';
-        menu.style.paddingTop='1em';
+        menu.style.paddingTop='8px';
         menu.style.top='0px';
+        menu.style.background='#FFFFFF';
     };
     if (imgp.style.marginBottom =='0px'){
-        menu.style.paddingTop='0em';
+        menu.style.paddingTop='5px';
         menu.style.position = 'relative';
+        menu.style.background='#FFFFFF00';
     };
 });
 
