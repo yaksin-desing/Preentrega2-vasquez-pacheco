@@ -53,6 +53,7 @@ let item1 = document.getElementById('item1');
 let item2 = document.getElementById('item2');
 let item3 = document.getElementById('item3');
 let item4 = document.getElementById('item4');
+let palabra1 = document.getElementById('palabra1');
 
 window.addEventListener('scroll',()=>{
     let value = window.scrollY;
@@ -118,7 +119,7 @@ const cargarImagen = (entradas, observador) => {
 
 const observador = new IntersectionObserver(cargarImagen, {
 	root: null,
-	rootMargin: '0px',
+	rootMargin: '0px 0px 0px 1000px',
 	threshold: 1.0
 });
 
