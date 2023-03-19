@@ -166,8 +166,9 @@ h1 {
     padding-top: 2em;
     justify-content: center;
     align-items: center;
-    
+
 }
+
 .contactame {
     display: flex;
     justify-content: center;
@@ -277,6 +278,7 @@ h1 {
 .div3 {
     grid-area: 1 / 3 / 6 / 5;
 }
+
 .stars1 {
     position: absolute;
     z-index: 0;
@@ -285,7 +287,8 @@ h1 {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-.stars2{
+
+.stars2 {
     top: 100px;
     right: 2em;
     height: 2em;
@@ -297,7 +300,8 @@ h1 {
     animation-timing-function: linear;
     animation-direction: reverse;
 }
-.stars3{
+
+.stars3 {
     top: 50em;
     right: 1em;
     height: 1em;
@@ -309,12 +313,13 @@ h1 {
     animation-timing-function: linear;
     animation-direction: reverse;
 }
-.stars4{
+
+.stars4 {
     top: 19em;
     left: 3em;
     height: 4em;
     position: absolute;
-    z-index: 0;
+
     animation-name: backfloat;
     animation-duration: 30s;
     animation-iteration-count: infinite;
@@ -529,10 +534,43 @@ h1 {
     cursor: url("../assets/img/CONTACTAME.svg") 12 12, auto;
 }
 
-.svg {
-    color: #009cb8;
-
+.contcinta {
+    padding-top: 2em;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
 }
+
+.cinta1 {
+    width: 2000px;
+    height: 50px;
+    background-image: url("../assets/img/cinta.svg");
+    background-size: 100% 100%;
+    animation: slider 30s infinite linear;
+    background-repeat: repeat;
+}
+
+@keyframes slider {
+    to {
+        background-position: 2000px;
+    }
+}
+.cinta2 {
+    width: 2000px;
+    height: 50px;
+    background-image: url("../assets/img/cinta1.svg");
+    background-size: 100% 100%;
+    animation: 30s infinite linear;
+    background-repeat: repeat;
+    animation-name: pr;
+}
+
+@keyframes  pr{
+    to {
+        background-position: -2000px;
+    }
+}
+
 
 .titulo {
     font-family: 'Poppins';
@@ -818,7 +856,7 @@ footer {
         transition: transform 1s;
         transition-timing-function: cubic-bezier(0.01, 1.36, 1, 1.74);
         transform: rotate(35deg);
-        
+
     }
 
     #item1.visible {
