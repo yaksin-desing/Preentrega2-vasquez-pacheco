@@ -33,6 +33,7 @@ i {
     width: 100px;
 }
 
+
 .float {
     display: flex;
     position: fixed;
@@ -43,6 +44,7 @@ i {
     z-index: 1;
 
 }
+
 
 .botonfloat {
     margin-top: 6px;
@@ -451,6 +453,11 @@ h1 {
     padding-left: 5em;
     padding-right: 5em;
 }
+.hacer1 {
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
 
 .cabetitulo {
     display: flex;
@@ -793,6 +800,7 @@ footer {
     .home,
     .menu,
     .hacer,
+    .hacer1,
     footer {
         padding-left: 2em;
         padding-right: 2em;
@@ -928,6 +936,7 @@ footer {
     #item4.visible #flechaline3 {
         filter: invert(0%);
     }
+
 
     .cursor {
         display: none;
