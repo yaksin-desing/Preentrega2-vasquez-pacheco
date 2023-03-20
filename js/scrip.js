@@ -128,6 +128,7 @@ const observador = new IntersectionObserver(cargarImagen, {
 });
 
 observador.observe(titulo);
+observador.observe(titulo1);
 observador.observe(item1);
 observador.observe(item2);
 observador.observe(item3);
