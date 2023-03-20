@@ -55,6 +55,7 @@ let item3 = document.getElementById('item3');
 let item4 = document.getElementById('item4');
 let palabra1 = document.getElementById('palabra1');
 
+
 window.addEventListener('scroll',()=>{
     let value = window.scrollY;
     imgp.style.marginBottom = value * 0.4 + 'px';
@@ -105,6 +106,7 @@ function girar3(giro,color,colorline,trans,transTiming){
 let titulo = document.getElementById('titulo');
 let titulo1 = document.getElementById('titulo1'); 
 let cuerpotitulo = document.getElementById('cuerpotitulo');
+let hacerd = document.getElementById('hacerd');
 
 const cargarImagen = (entradas, observador) => {
 
@@ -126,12 +128,12 @@ const observador = new IntersectionObserver(cargarImagen, {
 });
 
 observador.observe(titulo);
-observador.observe(titulo1);
 observador.observe(item1);
 observador.observe(item2);
 observador.observe(item3);
 observador.observe(item4);
 observador.observe(cuerpotitulo);
+observador.observe(hacerd);
 
 
 

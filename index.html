@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/23b89812aa.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style\styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +59,51 @@
                 <div class="chips">Ux Writing</div>
             </div>
             <div class="gridbotones cursor-scale small">
-                <div class="bottoncontactame"><a class="contactame" href="">Contactame</a></div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <form>
+                                    <h2 class="tituloc">
+                                        <strong>Hola!</strong>&#128075¿ en que podria ayudarte ?
+                                    </h2>
+                                    <p class="parrafo">
+                                        Puedes dejar tus datos o comunicarte directamente conmigo a mi correo
+                                        electrónico <strong>Yaksinvasquez@gmail.com</strong> o mi WhatsApp
+                                        </strong><strong>(+57) 321 5841003 </strong>
+                                    </p>
+
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Nombre:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Telefono de contacto:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Correo electronico:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">¿En que podria
+                                            ayudarte?</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <div data-bs-dismiss="modal"><a class="cancelar" href=""> Cancelar </a></div>
+                                <button type="button" class="contactame">Enviar mensaje</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottoncontactame" data-bs-toggle="modal" data-bs-target="#exampleModal"><a
+                        class="contactame" href="#">Contactame</a></div>
                 <div class="bottoncontactame"><a class="pedircv" href=""> Ver mi cv </a></div>
             </div>
             <div class="gridcontadores">
@@ -100,9 +146,33 @@
         <div class="cinta2">
         </div>
     </section>
+    <!-- SECCION ACERCA DE MI -->
+    <section class="hacer1">
+        <!--<h2 id="titulo1" class="titulo" data-aos="fade-right">
+            Acerca de mi
+        </h2>-->
+        <div class="hacer1-grid">
+            <div class="hacer1-cont1">
+                <div class="hacer1-titulo">
+                    <h2 class="tituloc">Te doy la Bienvenida
+                        Ha mi portafolio</h2>
+                </div>
+                <div class="hacer1-contenido">
+                    <p>Mi nombre es Jaksin sains vasques, soy de la ciudad de barranquilla, Colombia y tengo 27 años.
+                        Soy diseñador Ux-Ui y desarrollador fontend, tengo 3 años de experiencia en el área del diseño
+                        de interfaces, soy muy auto-didacta por lo que normalmente adquiero nuevos conocimientos y
+                        técnicas. Me destaco en el diseño ux - ui y es en lo que ejerso pero estoy instruyendome y
+                        realizando cursos en el area de la programación.
+                </div>
+            </div>
+            <div class="hacer1-cont2">
+                <div class="imagenmia"> <img src="assets\img\fotomia.svg" alt=""></div>
+            </div>
+        </div>
+    </section>
     <!-- SECCION NUMERO 2 -->
     <section class="hacer">
-        <div id="cuerpotitulo" class="cuerpotitulo">
+        <div id="cuerpotitulo" class="cuerpotitulo" data-aos="fade-right">
             <h2 id="titulo" class="titulo">
                 Mis especialidades
             </h2>
@@ -190,21 +260,16 @@
 
     </section>
 
-    <!-- SECCION ACERCA DE MI -->
-    <section class="hacer1">
-        <h2 id="titulo1" class="titulo" data-aos="fade-right">
-            Acerca de mi
-        </h2>
-    </section>
     <!-- PIE DE PAGINA -->
     <footer>
-        
-
         <p class="pie">
             2023 © Jaksin sain
         </p>
     </footer>
     <!-- RUTAS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="js/scrip.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
