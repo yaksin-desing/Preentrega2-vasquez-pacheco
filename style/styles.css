@@ -245,10 +245,14 @@ h1 {
     color: #000000;
     text-align: center;
 }
+.contactame__banner:hover {
+    background: #020202;
+    color: #ffffff;
+}
 
 .contactame:hover {
-    background: #ffffff;
-    color: #000000;
+    background: #000000;
+    color: #ffffff;
 }
 
 .botones2 {
@@ -326,7 +330,7 @@ h1 {
 
 .stars1 {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     animation-name: backfloat;
     animation-duration: 20s;
     animation-iteration-count: infinite;
@@ -396,7 +400,7 @@ h1 {
 }
 
 .banner3:hover {
-    background: #ff085a;
+    background: #653bfd;
 }
 
 .banner2:hover {
@@ -504,6 +508,12 @@ h1 {
     transform-origin: bottom left;
 }
 
+.hacer0 {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 4em;
+
+}
 .hacer {
     padding-left: 5em;
     padding-right: 5em;
@@ -514,7 +524,6 @@ h1 {
 
 .hacer1 {
     gap: 20px;
-
     padding-bottom: 5em;
     border-radius: 10px 10px 0px 0px;
     display: flex;
@@ -721,11 +730,7 @@ h1 {
     animation-name: pr;
 }
 
-@keyframes pr {
-    to {
-        background-position: -2000px;
-    }
-}
+
 
 .tituloc {
     font-family: 'Poppins';
@@ -891,20 +896,23 @@ footer {
 }
 
 .banner0 {
+    margin-top: 5em;
     display: grid;
     padding-left: 5em;
     padding-right: 5em;
     grid-template-columns: 50% 50%;
     align-items: center;
-
-
-
+    background-image: url("../assets/img/backprueba.svg");
+    background-size: 200% 100%;
+    animation: 30s infinite linear; 
+    background-repeat: repeat;
+    animation-name: pr;
 }
 
+
 .imgbanner {
-    padding-top: 6em;
     display: flex;
-    margin-top: 1em;
+    margin-top: 5em;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -1019,6 +1027,7 @@ footer {
     .menu,
     .hacer,
     .hacer1,
+    .hacer0,
     footer {
         padding-left: 2em;
         padding-right: 2em;
@@ -1255,7 +1264,8 @@ footer {
         gap: 1em;
         padding-left: 2em;
         padding-right: 2em;
-        background: linear-gradient(180.27deg, #FFFFFF 32.56%, #CDCCFF 64.88%, #02005A 79.48%, #000000 100.33%);
+        background-size: 500% 100%;
+        
     }
 
     .banner__banner_conten {
@@ -1400,4 +1410,9 @@ p {
 
 .grow-small {
     transform: scale(2.5);
+}
+@keyframes pr {
+    to {
+        background-position: -2000px;
+    }
 }
