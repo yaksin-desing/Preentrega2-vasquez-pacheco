@@ -65,11 +65,12 @@ window.addEventListener('scroll',()=>{
         menu.style.paddingTop='8px';
         menu.style.top='0px';
         menu.style.background='#FFFFFF';
+        
     };
     if (imgp.style.marginBottom =='0px'){
         menu.style.paddingTop='5px';
         menu.style.position = 'relative';
-        menu.style.background='#FFFFFF00';
+        menu.style.background='#FFFFFF';
     };
 });
 
@@ -112,10 +113,10 @@ const cargarImagen = (entradas, observador) => {
 
 	entradas.forEach((entrada) => {
 		if(entrada.isIntersecting){
-            console.log('visible');
+            
 			entrada.target.classList.add('visible');
 		}else {
-            console.log('no visible');
+            
             entrada.target.classList.remove('visible');
 		}
 	});

@@ -12,7 +12,7 @@ a {
 body {
     cursor: url("../assets/img/cursor.svg") 12 12, auto;
     flex-direction: column;
-    background: #f1f1f1;
+    background: #f8faff;
 }
 
 
@@ -76,13 +76,15 @@ i {
 
 .menu {
     display: grid;
+    align-items: center;
+
     grid-template-columns: 50% 50%;
     justify-content: end;
-    align-items: flex-end;
+
     padding-left: 5em;
     padding-right: 5em;
     width: 100%;
-
+    background: #ffffff;
 }
 
 .listamenu {
@@ -90,8 +92,6 @@ i {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: end;
-
-
 }
 
 .list {
@@ -99,6 +99,8 @@ i {
     align-items: center;
     justify-content: end;
     gap: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -177,8 +179,27 @@ h1 {
     align-items: center;
     width: 151px;
     height: 43px;
-    background: #000000;
-    border: 1px solid #3D3D3D;
+    background: #6B00D7;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    cursor: url("../assets/img/ir.svg") 8.5 12, auto;
+}
+
+.contactame__banner {
+    display: flex;
+    margin-bottom: 6em;
+    margin-top: 3em;
+    justify-content: center;
+    align-items: center;
+    width: 151px;
+    height: 43px;
+    background: #6B00D7;
     border-radius: 5px;
     font-family: 'Poppins';
     font-style: normal;
@@ -239,7 +260,6 @@ h1 {
     gap: 10px;
     width: 239px;
     height: 63px;
-    border: 1px solid #3D3D3D;
     border-radius: 89px;
     font-family: 'Poppins';
     font-style: normal;
@@ -260,12 +280,14 @@ h1 {
 }
 
 .home {
-    margin-top: 1em;
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
     padding-left: 5em;
     padding-right: 5em;
+    background: #ffffff;
 
 }
 
@@ -304,7 +326,7 @@ h1 {
 
 .stars1 {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     animation-name: backfloat;
     animation-duration: 20s;
     animation-iteration-count: infinite;
@@ -324,12 +346,25 @@ h1 {
     animation-direction: reverse;
 }
 
-.stars3 {
-    top: 50em;
-    right: 1em;
-    height: 1em;
+.stars2r {
+    top: 100px;
+    right: 2em;
+    height: 2em;
     position: absolute;
     z-index: 0;
+    animation-name: backfloat;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.stars3 {
+    top: 45em;
+    right: 2em;
+    height: 1em;
+    position: absolute;
+
     animation-name: backfloat;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -342,7 +377,6 @@ h1 {
     left: 3em;
     height: 4em;
     position: absolute;
-
     animation-name: backfloat;
     animation-duration: 30s;
     animation-iteration-count: infinite;
@@ -473,12 +507,14 @@ h1 {
 .hacer {
     padding-left: 5em;
     padding-right: 5em;
+    padding-bottom: 4em;
+    background: #ffffff;
 }
 
 
 .hacer1 {
     gap: 20px;
-    margin-top: 5em;
+
     padding-bottom: 5em;
     border-radius: 10px 10px 0px 0px;
     display: flex;
@@ -490,6 +526,7 @@ h1 {
 }
 
 .hacer1-grid {
+
     display: grid;
     grid-template-columns: 50% 50%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 21.34%, #FFFFFF 21.35%, #FFFFFF 100%);
@@ -538,12 +575,19 @@ h1 {
     background-image: url("../assets/img/backstrella.svg");
     background-repeat: no-repeat;
     background-position: 220px 0px;
-    animation-name: star;
-
 }
 
 .cabetitulo {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.cabetitulo1 {
+    display: grid;
+    grid-template-columns: 30% 30% 39%;
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
@@ -558,6 +602,27 @@ h1 {
     line-height: 22px;
     color: #000000;
 }
+
+.subtituloitem1 {
+    display: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.subtituloitem2 {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
 
 .tituloitem {
     font-family: 'Poppins';
@@ -625,7 +690,7 @@ h1 {
 }
 
 .contcinta {
-    padding-top: 2em;
+
     height: auto;
     margin: auto;
     overflow: hidden;
@@ -661,6 +726,7 @@ h1 {
         background-position: -2000px;
     }
 }
+
 .tituloc {
     font-family: 'Poppins';
     font-style: normal;
@@ -824,6 +890,55 @@ footer {
     color: #3D3D3D;
 }
 
+.banner0 {
+    display: grid;
+    padding-left: 5em;
+    padding-right: 5em;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+
+
+}
+
+.imgbanner {
+    padding-top: 6em;
+    display: flex;
+    margin-top: 1em;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__banner {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 51px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    color: #000000;
+}
+
+.banner__banner_conten {
+    padding-top: 1em;
+    padding-right: 6em;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    text-align: start;
+    color: #000000;
+
+}
+
+
 .botonver:hover {
     border: 2px solid #eeeeee;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.50);
@@ -835,7 +950,7 @@ footer {
 }
 
 .bars__menu {
-    position: fixed;
+
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -844,7 +959,6 @@ footer {
     height: 30px;
     cursor: pointer;
     display: none;
-
 
 }
 
@@ -874,11 +988,17 @@ footer {
 
 
 
+
 /* ##################### MEDIA ##############33333333    */
 
 
 
 @media (max-width: 1120px) {
+    .list {
+        margin: 0;
+        padding: 0;
+    }
+
     h1 {
         font-weight: 900;
         font-size: 45px;
@@ -943,23 +1063,26 @@ footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
     .hacer1-grid .hacer1-cont1:nth-of-type(1) {
         order: 2;
     }
-    .hacer1-grid{
+
+    .hacer1-grid {
         padding-top: 0;
         margin-left: 0;
         padding-left: 0;
     }
+
     .hacer1-cont1 {
         margin: 1em;
         padding: 1em;
         display: flex;
         flex-direction: column;
         background: #ffffff;
-    
+
     }
-    
+
     .hacer1-titulo {
         margin: 0;
         padding: 0;
@@ -970,9 +1093,9 @@ footer {
         line-height: 135.5%;
         display: flex;
         color: #000000;
-    
+
     }
-    
+
     .hacer1-contenido {
         margin: 0;
         padding: 0;
@@ -982,9 +1105,6 @@ footer {
         font-size: 12px;
         color: #000000;
     }
-    
-    
-    
 
     .items {
         grid-template-columns: 1fr;
@@ -992,6 +1112,7 @@ footer {
         grid-column-gap: 10px;
         grid-row-gap: 30px;
     }
+
 
     #flecha,
     #flecha1,
@@ -1002,24 +1123,33 @@ footer {
         transition-timing-function: cubic-bezier(0.01, 1.36, 1, 1.74);
     }
 
+    .item1,
+    .item2,
+    .item3,
+    .item4 {
+        display: grid;
+    }
+
 
     /* item1 */
     #item1.visible #flecha {
         transition: transform 1s;
         transition-timing-function: cubic-bezier(0.01, 1.36, 1, 1.74);
         transform: rotate(35deg);
+        background: #ffffff;
 
     }
 
     #item1.visible {
-        filter: invert(100%);
         background: #ffffff;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-        border: 0.5px solid rgb(148, 148, 148);
+
+        border: 0.5px solid #000000;
     }
 
     #item1.visible #flechaline {
         filter: invert(0%);
+        color: #ffffff;
+
     }
 
     /* item2 */
@@ -1032,9 +1162,9 @@ footer {
     }
 
     #item2.visible {
-        filter: invert(100%);
+
         background: #ffffff;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+
         border: 0.5px solid #000000;
     }
 
@@ -1052,9 +1182,9 @@ footer {
     }
 
     #item3.visible {
-        filter: invert(100%);
+
         background: #ffffff;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+
         border: 0.5px solid #000000;
     }
 
@@ -1071,9 +1201,9 @@ footer {
     }
 
     #item4.visible {
-        filter: invert(100%);
+
         background: #ffffff;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+
         border: 0.5px solid #000000;
     }
 
@@ -1103,6 +1233,76 @@ footer {
 }
 
 @media (max-width: 750px) {
+    .imgbanner {
+        margin-top: 0em;
+        padding-top: 0em;
+    }
+
+    .contactame__banner {
+        background: #6B00D7;
+        padding-bottom: 0em;
+        filter: invert(0%);
+    }
+
+    .conten__banner0 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner0 {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+        background: linear-gradient(180.27deg, #FFFFFF 32.56%, #CDCCFF 64.88%, #02005A 79.48%, #000000 100.33%);
+    }
+
+    .banner__banner_conten {
+        padding-top: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 13px;
+        text-align: center;
+
+    }
+
+    .banner__banner {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 41px;
+        padding-top: 2em;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .cabetitulo1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 10px;
+        direction: rtl;
+
+    }
+
+    .subtituloitem2 {
+        display: none;
+    }
+
+    .subtituloitem1 {
+        display: contents;
+    }
+
+    .cabe2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .cabe1 {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
     .gridproyectos {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -1136,13 +1336,15 @@ footer {
 }
 
 @media (max-width: 510px) {
+
     .hacer1-cont2 {
         background-image: url("../assets/img/backstrella.svg");
         background-repeat: no-repeat;
         background-position: 100px 10px;
         animation-name: star;
-    
+
     }
+
     .gridproyectos {
         display: grid;
         grid-template-columns: 100%;
