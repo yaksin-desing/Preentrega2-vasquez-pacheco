@@ -17,21 +17,72 @@
 </head>
 
 <body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <h2 class="tituloc">
+                            <strong>Hola!</strong>&#128075¿ en que podria ayudarte ?
+                        </h2>
+                        <p class="parrafo">
+                            Puedes dejar tus datos o comunicarte directamente conmigo a mi correo
+                            electrónico <strong>Yaksinvasquez@gmail.com</strong> o mi WhatsApp
+                            </strong><strong>(+57) 321 5841003 </strong>
+                        </p>
+
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Telefono de contacto:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Correo electronico:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">¿En que podria
+                                ayudarte?</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div data-bs-dismiss="modal"><a class="cancelar" href=""> Cancelar </a></div>
+                    <button type="button" class="contactame">Enviar mensaje</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <audio src="assets\img\aud.mp3" autoplay loop type="audio/mpeg"></audio>
     <header>
         <div class="cursor"></div>
         <!-- Menu -->
         <div data-aos="fade-down" class="menu" id="menu">
-            <img class="logo" src="assets\img\Group 1.svg" alt="">
+            <a class="logo" href="index.html"><img  src="../assets\img\Group 1.svg" alt=""></a>
             <div class="listamenu">
                 <nav>
                     <ul class="list">
-                        <li class="cursor-scale small"><a class="enlaseavtive" href="index.html">Inicio</a></li>
-                        <li class="cursor-scale small"><a class="enlaseinactive" href="pages\uxuipage.html">Acerca de
-                                mi</a></li>
-                        <li class="cursor-scale small"><a class="enlaseinactive" href="pages\uxresearch.html">Mis
-                                trabajos</a></li>
-                        <li class="cursor-scale small"><a class="contactame" href="">Contactar</a></li>
+                        <li class="cursor-scale small"><a class="enlaseavtive" href="./index.html">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="enlaseinactive nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Especialidades
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="pages/uxuipage.html">Diseñador ux-ui</a></li>
+                                <li><a class="dropdown-item" href="pages/uxresearch.html">Research-writin</a></li>
+                                <li><a class="dropdown-item" href="pages/developerweb.html">Frontend</a></li>
+                                <li><a class="dropdown-item" href="pages/developerflutter.html">Desarrollador flutter</a></li>
+                                </Ul>
+                        </li>
+                        <li class="cursor-scale small"><a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                class="contactame" href="">Contactar</a>
+                        </li>
                         <div class="bars__menu">
                             <span class="line1__bars-menu"></span>
                             <span class="line2__bars-menu"></span>
@@ -59,49 +110,7 @@
                 <div class="chips">Ux Writing</div>
             </div>
             <div class="gridbotones cursor-scale small">
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
 
-                            <div class="modal-body">
-                                <form>
-                                    <h2 class="tituloc">
-                                        <strong>Hola!</strong>&#128075¿ en que podria ayudarte ?
-                                    </h2>
-                                    <p class="parrafo">
-                                        Puedes dejar tus datos o comunicarte directamente conmigo a mi correo
-                                        electrónico <strong>Yaksinvasquez@gmail.com</strong> o mi WhatsApp
-                                        </strong><strong>(+57) 321 5841003 </strong>
-                                    </p>
-
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Nombre:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Telefono de contacto:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Correo electronico:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label for="message-text" class="col-form-label">¿En que podria
-                                            ayudarte?</label>
-                                        <textarea class="form-control" id="message-text"></textarea>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <div data-bs-dismiss="modal"><a class="cancelar" href=""> Cancelar </a></div>
-                                <button type="button" class="contactame">Enviar mensaje</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="bottoncontactame" data-bs-toggle="modal" data-bs-target="#exampleModal"><a
                         class="contactame" href="#">Contactame</a></div>
                 <div class="bottoncontactame"><a class="pedircv" href=""> Ver mi cv </a></div>
@@ -124,7 +133,7 @@
             <img class="stars1" src="assets\img\star2.svg" alt="star1"></a>
         </div>
     </div>
-    
+
     <img class="stars2r" src="assets\img\star3.svg" alt="star1"></a></div>
     <img class="stars2" src="assets\img\star1.svg" alt="star2"></a></div>
     <img class="stars3" src="assets\img\star2.svg" alt="star3"></a></div>
@@ -189,7 +198,7 @@
         <!-- LISTA DE MIS ESPECIALIDADES -->
         <div class="items">
             <!-- item UX - UI -->
-            <a class="cursor-scale small" href="">
+            <a class="cursor-scale small" href="pages/uxuipage.html">
                 <div data-aos="fade-right" id="item1"
                     onmouseover="girar('rotate(35deg)','#000000','invert(100%)','transform 1s','cubic-bezier(0.01, 1.36, 1, 1.74)')"
                     onmouseout="girar('rotate(0deg)','#FFFFFF00','invert(0%)','transform 0.5s','cubic-bezier(0.01, 1.36, 1, 1.74)')"
@@ -208,7 +217,7 @@
                 </div>
             </a>
             <!-- item RESEARCH -->
-            <a class="cursor-scale small" href="">
+            <a class="cursor-scale small" href="pages/uxresearch.html">
                 <div data-aos="fade-right" id="item2"
                     onmouseover="girar1('rotate(35deg)','#000000','invert(100%)','transform 1s','cubic-bezier(0.01, 1.36, 1, 1.74)')"
                     onmouseout="girar1('rotate(0deg)','#FFFFFF00','invert(0%)','transform 0.5s','cubic-bezier(0.01, 1.36, 1, 1.74)')"
@@ -229,7 +238,7 @@
                 </div>
             </a>
             <!-- item FRONTEND -->
-            <a class="cursor-scale small" href="">
+            <a class="cursor-scale small" href="pages/developerweb.html">
                 <div data-aos="fade-right" id="item3" class="item3"
                     onmouseover="girar2('rotate(35deg)','#000000','invert(100%)','transform 1s','cubic-bezier(0.01, 1.36, 1, 1.74)')"
                     onmouseout="girar2('rotate(0deg)','#FFFFFF00','invert(0%)','transform 0.5s','cubic-bezier(0.01, 1.36, 1, 1.74)')">
@@ -249,7 +258,7 @@
                 </div>
             </a>
             <!-- item DEV MOVIL -->
-            <a class="cursor-scale small" href="">
+            <a class="cursor-scale small" href="pages/developerflutter.html">
                 <div data-aos="fade-right" id="item4" class="item4"
                     onmouseover="girar3('rotate(35deg)','#000000','invert(100%)','transform 1s','cubic-bezier(0.01, 1.36, 1, 1.74)')"
                     onmouseout="girar3('rotate(0deg)','#FFFFFF00','invert(0%)','transform 0.5s','cubic-bezier(0.01, 1.36, 1, 1.74)')">
@@ -351,8 +360,8 @@
                     No le temas al éxito, contactame y empecemos a construir experiencias e interacciones positivas
                 </h3>
             </div>
-            <div data-bs-toggle="modal" data-bs-target="#exampleModal"><a
-                class="contactame__banner"  href="#">Contactame</a></div>
+            <div data-bs-toggle="modal" data-bs-target="#exampleModal"><a class="contactame__banner"
+                    href="#">Contactame</a></div>
         </div>
         <div class="imgbanner">
             <img src="assets\img\imgbanner.svg" alt="">
